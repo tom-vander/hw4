@@ -2,12 +2,39 @@
 <html lang="en">
 <%- include('partials/head.ejs') %>
 <body>
-<%- include('partials/nav.ejs') %>
-<main>
-    <div class="container">
-        <h2>Personal Scope</h2>
+    <%- include('partials/nav.ejs') %>
+    <main>
+        <div class="container">
+            <h3>Personal Scope</h3>
+            <p>You've probably received something similar to this in your e-mail inbox:</p>
+            <div id="fake_email">
+                <div class="email-header"><h4>From: <span class="info"> <%= user_2.first_name.toLowerCase() %>_<%= user_2.last_name.toLowerCase() %>@no-reply-<%= user_2.company_name.toLowerCase().replace(/\s/g, '') %>.com</span></h4></div>
+                <div class="email-header"><h4>To: <span class="info"> <%= user_1.first_name.toLowerCase() %>.<%= user_1.last_name.toLowerCase() %><%= user_1_domain %></span></h4></div>
+                <div class="email-header"><h4>Subject: <span class="info"> NOTICE - Annual Membership Renewal Upcoming</span></h4></div>
+                <div class="email-body"><div class="email-text"><h5>Dear <%= user_1.first_name %> <%= user_1.last_name %>,</h5>
+                    <p>This is a notice to remind you of your upcoming annual <strong>Platinum Membership renewal in 7 days</strong>.
+                        We appreciate your continued business and hope you are enjoying all the benefits of being one of our valued members.</p>
+                    <p> Your renewal fee will be <strong>$499.99</strong> and will be charged to the <strong><%= user_1.card_type %></strong>
+                        on file ending in <strong><%= user_1.card_number.slice(-4) %></strong> with an expiration date of <strong><%= user_1.card_exp %></strong>.</p>
+                    <p>If you have any <strong>questions or concerns</strong>, feel free to contact our customer support team at <strong><%= user_2.phone_number %></strong>. Additionally, you can refer to the <strong>Platinum Membership Guide</strong> attached to see if it answers any of your questions.</p>
+                    <h5>Sincerely,<br><%= user_2.first_name %>  <%= user_2.last_name %> of <%= user_2.company_name %></h5>
+                    <div class="attachment"><span class="material-symbols-outlined">attachment</span><span id="file_name">platinum_membership_guide.<%= user_2.file_ext %></span></div>
+                </div></div>
+            </div>
+            <p>E-mails are notoriously used by hackers and scammers to try and trick you into giving them information by responding to it, influencing you to call a number, or downloading something.</p>
+            <p>Responding to the e-mail allows scammers to validate your contact info and possibly retrieve your ip address or coordinates, and calling the number only validates more ways to contact you.</p>
+            <p>Downloading the attachment can lead to malware infecting your computer or creating a backdoor that allows remote unauthorized access to your system.</p>
+            <p>It's important to verify e-mails before trusting them, and the same should be done with any other digital interaction, such as visiting websites, downloading files and programs, attaching foreign devices to your home network or computer system, and more.</p>
+            <h3>Organizational and National Scopes</h3>
+            <p>In addition to individual users, malware can be used to infect, infiltrate, and sabotage business and government systems.</p>
+            <p>Though it's not directly targeting individual users, if a business or government system becomes infected, any sensitive information they have related to their employees or clients becomes compromised as well, which can affect individual users greatly.</p>
+            <p>Just like vetting the technological interactions you have, you can also maintain your digital safety by keeping up to date with news regarding the companies and government bodies you share sensitive data with.</p>
+        </div>
+    </main>
+    <div class="quote-box">
+        <span class="quote"><em><%= quote %></em></span>
+        <span class="author"> - <%= author %></span>
     </div>
-</main>
-<%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>

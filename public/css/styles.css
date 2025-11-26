@@ -93,11 +93,15 @@ nav a:hover {
     background-color: #C10A28;
     color: #ffffff;
     border-radius: 10px;
+    font-size: 2.2vw;
+    transition: all 0.2s ease-in;
 }
 
-nav a .material-symbols-outlined {
-    font-size: 2.5vw;
-    margin-right: 5px;
+nav a.active {
+    background-color: #ffffff;
+    color: #cf0000;
+    border-radius: 10px;
+    font-size: 2.2vw;
 }
 
 main {
@@ -114,6 +118,99 @@ main {
     padding: 15px;
 }
 
+#fake_email {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(203, 236, 252, 0.9);
+    border: 1px solid #646188;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    padding: 5px;
+    margin-left: 4vw;
+}
+
+#fake_email .email-header {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #646188;
+    background-color: #e7dcb4;
+    margin-inline: 2px;
+    margin-block: 0.15vw;
+
+}
+
+#fake_email .email-header h4 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 10px;
+    margin-block: 0;
+    font-size: 1vw;
+}
+
+#fake_email .email-header h4 span {
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f0ed;
+    flex-grow: 1;
+    margin-inline: 0.5vw;
+    padding-inline: 10px;
+    padding-block: 3px;
+    border: 1px solid #646188;
+    font-weight: 400;
+}
+
+#fake_email .email-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #646188;
+    background-color: #e7dcb4;
+    margin: 2px;
+}
+
+#fake_email .email-text {
+    background-color: #f5f0ed;
+    padding: 10px;
+}
+
+#fake_email .email-text h5{
+    margin: 0;
+    font-size: 1.125vw;
+}
+
+#fake_email .email-text p {
+    color: #000000;;
+    font-size: 1.125vw;
+}
+
+.attachment {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    margin-block: 10px;
+    background-color: #e7dcb4;
+    width: fit-content;
+    padding: 5px;
+    font-size: 1vw;
+    border-radius: 5px;
+}
+
+.attachment .material-symbols-outlined{
+    font-size: 1.75vw;
+}
+
+.attachment #file_name {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .container {
     justify-content: center;
     align-items: center;
@@ -128,11 +225,19 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-self: center;
+    font-size: 2.5vw;
+}
+
+.container h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 2vw;
     color: #C10A28;
 }
 
-.container h2 span {
+.container h3 span {
     margin-right: 10px;
     font-size: 3vw;
 }
@@ -141,6 +246,20 @@ main {
     font-size: 1.5vw;
     color: #300A6E;
     padding-inline: 4vw;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+}
+
+.quote{
+    margin-right: 5px;
 }
 
 footer {

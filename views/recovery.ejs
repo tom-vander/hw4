@@ -2,12 +2,36 @@
 <html lang="en">
 <%- include('partials/head.ejs') %>
 <body>
-<%- include('partials/nav.ejs') %>
-<main>
-    <div class="container">
-        <h2>Recovery Procedures</h2>
+    <%- include('partials/nav.ejs') %>
+    <main>
+        <div class="container">
+            <h2>Recovery Procedure</h2>
+            <p>Should your network of devices become compromised, recovery should consist of the following four steps:
+            containment, elimination, restoration, and improvement.</p>
+            <h3>1. Containment: Isolate your devices</h3>
+            <p>This step is the most important, as it prevents further spread of the malware from where it may currently reside
+            in your system. You should disconnect your device from the network by removing wired or wireless internet connections,
+            but you should not turn off your devices because then it will be too hard to determine what malware is affecting your system.</p>
+            <h3>2. Elimination: Clean your system</h3>
+            <p>This step is the easiest, as it involves removing all traces of malware from your system. You should do this by
+            uninstalling any applications that malware may have installed and by removing any files that malware may have
+            downloaded.</p>
+            <p>NOTE: Some malware may be too hard to remove entirely, which only leaves wiping the entire hard drive and restarting from
+            either a clean backup or begin again fresh.</p>
+            <h3>3. Restoration: Get your system running again</h3>
+            <p>This step involves restoring your system to a working state. This may involve restoring a backup or reinstalling
+            applications that were removed during the elimination step. If you read the 'defense' page, then you know how you can
+            establish backup drives of your data and your operating systems. If not, I'd recommend going there now. </p>
+            <h3>4. Improvement: Learn from your experience</h3>
+            <p>The final step is to learn from your experience recovering from the malware attack(s) and find better ways of
+            preventing, detecting, and preparing for them. There are always newer resources and tools that become available to
+            combat the advancement of malware.</p>
+        </div>
+    </main>
+    <div class="quote-box">
+        <span class="quote"><em><%= quote %></em></span>
+        <span class="author"> - <%= author %></span>
     </div>
-</main>
-<%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>

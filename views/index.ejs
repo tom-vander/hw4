@@ -5,25 +5,29 @@
     <%- include('partials/nav.ejs') %>
     <main>
         <div class="container">
-            <h2><span class="material-symbols-outlined">timer</span>It's time to strengthen your cyber awareness!</h2>
+            <h3><span class="material-symbols-outlined">timer</span>It's time to strengthen your cyber awareness!</h3>
             <p><strong><em>Welcome!</em></strong> This page is intended to provide users with information regarding the dangers of malware and how
                 they can defend themselves against attacks and prepare for recovery should they become a victim of circumstance.</p>
             <br>
-            <h2><span class="material-symbols-outlined">auto_stories</span>Knowledge is your greatest tool!</h2>
+            <h3><span class="material-symbols-outlined">auto_stories</span>Knowledge is your greatest tool!</h3>
             <p>The best way to defend yourself against cyberattacks is to make yourself aware of what to watch out for.
                 Check out our <strong>'Scope'</strong> page to learn about cyberattacks range between personal impacts to global ones.
                 <br><br>Additionally, you can visit our <strong>'Types'</strong> page to learn about the various types of malware that commonly target the average user.</p>
             <br>
-            <h2><span class="material-symbols-outlined">shield_lock</span>Defend and Prepare</h2>
+            <h3><span class="material-symbols-outlined">shield_lock</span>Defend and Prepare</h3>
             <p>There are many procedures, services, and tools available to help you establish a strong cyber defense and reliable back-up plan.
                 Check out our <strong>'Defense'</strong> page to view these resources.
             </p>
             <br>
-            <h2><span class="material-symbols-outlined">healing</span>There's always a way to bounce back!</h2>
+            <h3><span class="material-symbols-outlined">healing</span>There's always a way to bounce back!</h3>
             <p>If you believe you've become compromised or begin to doubt the integrity of your digital environment, check out our <strong>'Recovery'</strong> page to
                 learn how to recover from a successful or potential cyberattack.</p>
         </div>
     </main>
+    <div class="quote-box">
+        <span class="quote"><em><%= quote %></em></span>
+        <span class="author"> - <%= author %></span>
+    </div>
     <%- include('partials/footer.ejs') %>
 </body>
 </html>

@@ -2,12 +2,44 @@
 <html lang="en">
 <%- include('partials/head.ejs') %>
 <body>
-<%- include('partials/nav.ejs') %>
-<main>
-    <div class="container">
-        <h2>Building Your Defenses</h2>
+    <%- include('partials/nav.ejs') %>
+    <main>
+        <div class="container">
+            <h2>Building Your Defenses</h2>
+            <p>When it comes to dealing with malware, it helps to both establish as many defenses as you can and to prepare
+            yourself for when those defenses may fail. This section will cover the tools and services that are
+            available to prevent, detect, and prepare for malware attacks.</p>
+            <h3>Prevention</h3>
+            <p>One of the simplest and easiest ways to prevent a malware attack is to keep your systems updated. Most
+            software and operating system developers focus just as much on increasing security as they do on creating new features.
+            To do this, developers will release patches to their software and operating systems that eliminate vulnerabilities and
+            implement new security measures.</p>
+            <p>Additionally, there are tools that actively try to catch malicious programs before they can attack, like antivirus,
+            which scan files and code to preemptively determine their behavior and identify malware signatures. Similar tools include firewalls,
+            ad blockers, and security gateways.</p>
+            <h3>Detection</h3>
+            <p>While preventive measures may be helpful, they can still miss a thing or two, especially since malware is becoming more
+            advanced by the day. For the malware that is able to get past the preventive measures, there are also tools made to identify
+            malicious and invasive actions. Intrusive detection systems, for example, are used for identifying suspicious network-level activity, like actions
+            performed by ransomware and worms.</p>
+            <p>There are also honeypots, which are decoy systems that are implemented to attract malware, making it easier to detect them.
+            Honeypots can also be used for analyzing new threats, which further help to improve security measures and tools. Similar tools
+            include anti-malware, for active threat detection of spyware, keyloggers, and trojans, and security information and event management,
+            for collection and analyzing security logs within a network.</p>
+            <h3>Preparation</h3>
+            <p>In all, prevention and detection are the best way to actively fight malware before they become a problem, but it's important to
+            prepare for the possibility that they may fail. Establishing back-ups of your data and systems will allow you to salvage your valuable
+            information and technology should any of your devices or networks become compromised, which tools like external hard drives and cloud storages can
+            help you with.</p>
+            <p>Additionally, encrypting your data can ensure that regardless of whoever may get it will not be able to access it without going through
+            extensively burdening circumstances. Using services like password managers can ensure that you will always have an active resource for
+            retrieving your passwords should you need to get rid of any devices on your network.</p>
+        </div>
+    </main>
+    <div class="quote-box">
+        <span class="quote"><em><%= quote %></em></span>
+        <span class="author"> - <%= author %></span>
     </div>
-</main>
-<%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>

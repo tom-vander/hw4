@@ -6,8 +6,28 @@
     <main>
         <div class="container">
             <h2>Types of Malware</h2>
+            <h3>Trojans</h3>
+            <p>Trojans are suitably named for their deceitful nature to appear as one thing when it's another.
+                This type of malware typically disguises itself to look like harmless software, so once they are on your system,
+                they can create a backdoor that makes way for even more dangerous malware to invade your system undetected.</p>
+            <h3>Ransomware</h3>
+            <p>Most malware avoids doing anything that leads to its detection, but not this kind. Ransomware makes your personal
+                data inaccessible in an effort to encourage you to pay a ransom to your attacker to gain access back.</p>
+            <h3>Spyware & Keyloggers</h3>
+            <p>Unlike ransomware, spyware and keyloggers spend long periods of time on users' computers collecting as much information
+                as they can. Spyware is used to collect information like browsing history and device configurations, while keyloggers keep track
+                of all of your keystrokes.</p>
+            <h3>Viruses & Worms</h3>
+            <p>Viruses and worms are typically used to change the integrity of your systems by deleting and corrupting files, using your available
+                resources like memory, and giving access to your system to other malware. These types of malware can not only create entry points
+                for other malware, but they can also give them privileges within your system. While both replicate their code to invade your system,
+                viruses require users to open them, while worms do not.</p>
         </div>
     </main>
+    <div class="quote-box">
+        <span class="quote"><em><%= quote %></em></span>
+        <span class="author"> - <%= author %></span>
+    </div>
     <%- include('partials/footer.ejs') %>
 </body>
 </html>
